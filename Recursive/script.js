@@ -13,17 +13,18 @@ function fib(num){
     return seq;
 }
 
-console.log(fib(8));
+console.log(fib(5));
 
 
 console.log();
 
-// 
+
+// Recursive 
 
 function fir(num,seq=[0,1]){
 
     if(num <= 1){
-        return seq.slice(0,num +1);
+        return seq.slice(0,num);
     }
     if(num > 2){
         let newNum = seq.at(-1) + seq.at(-2);
